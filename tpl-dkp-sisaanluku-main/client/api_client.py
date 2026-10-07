@@ -25,3 +25,5 @@ def fetch_data(api_url):
     except requests.JSONDecodeError:
         print("Data not stored in JSON")
         return None
+    except Exception:
+        return None
